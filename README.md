@@ -18,6 +18,10 @@ The application runs entirely in the browser and does not require a backend.
 
 ---
 
+## Live Site: https://himani-2-git.github.io/NoteFit/
+
+---
+
 ## Core Features
 
 ### Dashboard
