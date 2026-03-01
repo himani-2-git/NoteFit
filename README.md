@@ -127,7 +127,7 @@ This project demonstrates:
 ## Author
 
 Himani
-B.Tech Computer Engineering
+- B.Tech Computer Engineering
 
 ---
 
