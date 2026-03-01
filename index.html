@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notefit - Smart Daily Business Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.svg" class="logo-img" alt="Notefit Logo">
+    <div>
+      <h1>Notefit</h1>
+      <p class="tagline">Smart Daily Sales & Expense Tracker</p>
+    </div>
+  </div>
+  <button id="exportBtn" class="btn-secondary">Export CSV</button>
+</header>
+
+<main>
+
+  <section class="dashboard">
+    <div class="card">
+      <h3>Today's Sales</h3>
+      <p id="todaySales">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Today's Expenses</h3>
+      <p id="todayExpenses">₹0</p>
+    </div>
+    <div class="card highlight">
+      <h3>Today's Profit</h3>
+      <p id="todayProfit">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Last 7 Days Profit</h3>
+      <p id="sevenProfit">₹0</p>
+    </div>
+  </section>
+
+  <section class="forms">
+    <div class="form-card">
+      <h2>Add Sale</h2>
+      <form id="saleForm">
+        <input type="number" id="saleAmount" placeholder="Amount" required>
+        <input type="text" id="saleNote" placeholder="Note">
+        <input type="date" id="saleDate" required>
+        <button type="submit" class="btn-primary">Add Sale</button>
+      </form>
+    </div>
+
+    <div class="form-card">
+      <h2>Add Expense</h2>
+      <form id="expenseForm">
+        <input type="number" id="expenseAmount" placeholder="Amount" required>
+        <select id="expenseCategory">
+          <option value="Stock">Stock</option>
+          <option value="Transport">Transport</option>
+          <option value="Rent">Rent</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="date" id="expenseDate" required>
+        <button type="submit" class="btn-primary">Add Expense</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="records">
+    <div class="records-header">
+      <h2>Transaction Records</h2>
+      <input type="text" id="searchInput" placeholder="Search transactions...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Details</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="recordsBody"></tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2026 Notefit • Built for Local Business Empowerment
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

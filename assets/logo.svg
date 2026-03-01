@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Scalloped Badge -->
+  <path
+    d="
+    M256 20
+    C290 20 310 60 350 60
+    C390 60 430 100 430 140
+    C430 180 470 200 470 256
+    C470 312 430 332 430 372
+    C430 412 390 452 350 452
+    C310 452 290 492 256 492
+    C222 492 202 452 162 452
+    C122 452 82 412 82 372
+    C82 332 42 312 42 256
+    C42 200 82 180 82 140
+    C82 100 122 60 162 60
+    C202 60 222 20 256 20
+    Z"
+    fill="#1B1B1B"
+  />
+
+  <!-- Rupee Symbol -->
+  <text
+    x="50%"
+    y="55%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-size="220"
+    font-family="Inter, Arial, sans-serif"
+    font-weight="700"
+    fill="#FC5E02"
+  >
+    ₹
+  </text>
+
+</svg>

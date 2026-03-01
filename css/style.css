@@ -1,0 +1,272 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --dark: #1B1B1B;
+  --primary: #FC5E02;
+  --primary-soft: #ff7a18;
+  --text-light: #6b7280;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+
+  --shadow-soft: 0 15px 40px rgba(0,0,0,0.06);
+  --shadow-hover: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+}
+
+
+.header {
+  padding: 40px 80px;
+  background: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+}
+
+.brand h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary-soft), var(--primary));
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(252,94,2,0.3);
+}
+
+.btn-secondary {
+  background: var(--dark);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Icon Button (Delete) */
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.icon-btn img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  transition: 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.icon-btn:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+.dashboard {
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--surface);
+  padding: 35px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.highlight {
+  border: 1px solid rgba(252, 94, 2, 0.15);
+}
+
+.highlight p {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+
+.forms {
+  padding: 0 80px 60px 80px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-card {
+  flex: 1;
+  min-width: 320px;
+  background: var(--surface);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-card h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  border: none;
+  background: #f0f1f4;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 2px rgba(252,94,2,0.3);
+}
+
+
+.records {
+  padding: 0 80px 80px 80px;
+}
+
+.records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.records-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+th {
+  text-align: left;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+td {
+  padding: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+.sale {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.expense {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.profit-positive {
+  color: #16a34a;
+}
+
+.profit-negative {
+  color: #dc2626;
+}
